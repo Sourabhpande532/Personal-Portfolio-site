@@ -1,0 +1,39 @@
+/** @format */
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    font-size: small;
+  }
+  .intro_section {
+    flex-direction: column-reverse;
+    min-height: 18rem;
+  }
+  .fluid-animated {
+    min-height: 9rem;
+    max-height: 9rem;
+    min-width: 9rem;
+    max-width: 9rem;
+  }
+  .intro_content {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .about_intro {
+    flex-direction: column-reverse;
+    margin-top: 5rem;
+  }
+  .about_image {
+    max-width: 70vh;
+  }
+  .Owner_p {
+    padding-top: 1rem;
+  }
+  .header {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .cards {
+    min-width: 55vw;
+    max-width: 55vw;
+  }
+}
