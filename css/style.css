@@ -1,6 +1,16 @@
-/** @format */
+:root {
+  --primaryRed: #ec0d13;
+  --primaryEmerald: #34d399;
+  --primaryPurple: #a668f2;
+  --borderColor: #374151;
+  --bgPrimary: #0b111c;
+  --bgSecondary: #0e1522;
+  --bgTernary: #141d2e;
+  --textSecondary: #b8bdc5;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +20,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   background-color: #0d0d0d;
@@ -18,7 +29,7 @@ body {
   overflow-x: hidden;
 }
 
-.structure {
+.App {
   max-width: 54rem;
   margin: 0 auto;
 }
@@ -27,50 +38,43 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #0d0d0d;
-  z-index: 1;
+  background-color: rgba(33, 32, 32, 0.5);
   position: sticky;
   top: 0;
-  border-bottom: 1px solid white;
+  z-index: 1;
+  border-bottom: 1px solid var(--borderColor);
   padding: 1.3rem;
   margin-bottom: 2.5rem;
-  height: 18vh;
-  background-image: linear-gradient(
-      to right bottom,
-      #0d0d0d,
-      /* rgba(6, 1, 10, 0.952) */
-    ),
-    url();
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(100% 0, 100% 38%, 86% 92%, 0 53%, 0 0);
-  z-index: 1;
 }
 
-.nav {
+.nav-group {
+  min-width: 15rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.nav-item {
+.nav-brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-link {
   text-decoration: none;
-  color: #23c4ed;
+  color: inherit;
   transition: 0.1s all;
 }
-.a:after {
+
+.nav-link:hover {
+  color: var(--primaryEmerald);
+}
+
+.nav-link::after {
   content: "";
   display: block;
   width: 0;
   height: 0.5px;
   background-color: plum;
   transition: width 0.3s;
-}
-.a:hover::after {
-  width: 100%;
-  transition: width.1s;
-}
-.a:hover {
-  color: rgb(125, 95, 125);
 }
 
 /* .........  */
@@ -111,6 +115,7 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap");
+
 .name {
   background: -webkit-linear-gradient(rgb(27, 27, 46), rgb(82, 5, 82));
   -webkit-background-clip: text;
@@ -140,14 +145,17 @@ body {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-50px);
   }
 }
+
 @keyframes move {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-50px);
   }
@@ -159,10 +167,12 @@ body {
   position: relative;
   animation: slide-in-right 2s both;
 }
+
 @keyframes slide-in-right {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(100px);
   }
@@ -172,6 +182,7 @@ body {
   0% {
     right: -55rem;
   }
+
   100% {
     right: 0.5rem;
   }
@@ -189,6 +200,7 @@ body {
   margin-left: -0.9rem;
   transition: 0.5s;
 }
+
 .btn:hover {
   background: linear-gradient(to right, black, purple);
 }
@@ -217,6 +229,7 @@ body {
   font-size: 4rem;
   color: grey;
 }
+
 .about_image {
   max-width: 25rem;
   background: #0d0d0d;
@@ -259,6 +272,7 @@ body {
   border-top-right-radius: 1.2rem;
   filter: brightness(0.7) saturate(100%) contrast(150%) hue-rotate(20deg);
 }
+
 .card_image img:hover {
   transform: scale(1);
   border: 3px solid plum;
@@ -294,6 +308,7 @@ body {
 .blogs-content {
   margin-top: 4rem;
 }
+
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -345,6 +360,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .blog_image {
   width: 100%;
   min-height: 11rem;
