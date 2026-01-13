@@ -12,6 +12,56 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .skills-container {
+      margin: 3rem auto;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+
+    .skillBullet {
+      /* background-color: red; */
+      padding: 0.7rem 2rem;
+      background: #141414;
+      color: inherit;
+      font-family: inherit;
+      font-size: 1rem;
+      /* background-color: ; */
+      border-radius: 0.25rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 2rem;
+    }
+
+    .skillBullet img {
+      filter: grayscale(100%) contrast(115%);
+    }
+
+    .express {
+      background-color: wheat;
+      border-radius: 20px;
+    }
+
+    .skillBullet:hover {
+      box-shadow: none;
+      background-color: #52525c;
+    }
+
+    @media screen and (max-width:768px) {
+      .skills {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -60,7 +110,6 @@
     </div>
 
     <div class="about_container">
-
       <div class="header"> &lt; About /&gt;</div>
 
       <div class="about_intro" id="#about">
@@ -106,7 +155,6 @@
             </div>
           </div>
         </div>
-
         <!-- 2 -->
         <div class="cards">
           <div class="cart-item">
@@ -167,6 +215,65 @@
           </div>
         </div>
         <!--main-one  -->
+      </div>
+    </div>
+
+
+    <!-- Skills Section -->
+    <div id="skills" style="margin-top: 5rem;">
+      <div class="header">
+        &lt;Skills /&gt;
+      </div>
+      <div class="skills-container">
+        <div class="skills">
+          <span class="skillBullet">
+            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/reactjs.svg"
+              alt="skillIcon" />
+            React Js
+          </span>
+          <!-- 2 -->
+          <span class="skillBullet">
+            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/nodejs.svg"
+              alt="skillIcon" />
+            Node Js
+          </span>
+          <!-- 3 -->
+          <span class="skillBullet">
+            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/express.svg"
+              class="express" alt="skillIcon" />
+            Express
+          </span>
+          <!-- 4 -->
+          <span class="skillBullet">
+            <img src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/mongodb.svg" alt="skillIcon">
+            MongoDb
+          </span>
+          <!-- 5 -->
+          <span class="skillBullet">
+            <img src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/javascript.svg" alt="skillIcon">
+            Javsscript
+          </span>
+          <!-- 6 -->
+          <span class="skillBullet">
+            <img src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/html.svg" alt="skillIcon">
+            HTML
+          </span>
+          <!-- 7 -->
+          <span class="skillBullet">
+            <img src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/css.svg" alt="skillIcon">
+            CSS
+          </span>
+          <!-- 8 -->
+          <span class="skillBullet">
+            <img src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/tailwindcss.svg" alt="skillIcon">
+            TailwindCSS
+          </span>
+          <!-- 9 -->
+          <span class="skillBullet">
+            <img src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/bootstrap.svg" alt="skillIcon">
+            Bootstrap
+          </span>
+        </div>
       </div>
     </div>
   </div>
