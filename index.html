@@ -12,57 +12,6 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    .skills-container {
-      margin: 3rem auto;
-    }
-
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 1.25rem;
-      align-items: stretch;
-    }
-
-    .skillBullet {
-      /* background-color: red; */
-      padding: 0.7rem 2rem;
-      background: #141414;
-      color: inherit;
-      font-family: inherit;
-      font-size: 1rem;
-      /* background-color: ; */
-      border-radius: 0.25rem;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-      padding: 2rem;
-    }
-
-    .skillBullet img {
-      filter: grayscale(100%) contrast(115%);
-    }
-
-    .icons-colols {
-      background-color: wheat;
-      border-radius: 20px;
-      padding: 2px;
-    }
-
-    .skillBullet:hover {
-      box-shadow: none;
-      background-color: #52525c;
-    }
-
-    @media screen and (max-width:768px) {
-      .skills {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -85,6 +34,7 @@
       </div>
     </div>
   </div>
+
   <div class="App">
     <div class="intro_section">
       <div class="intro_content">
@@ -118,12 +68,10 @@
           <p style="padding: 0.6rem;">
             Hello ! I'm <span class="heading_one"> Sourabh Pande </span><br />
             Passionate full-stack developer crafting intuitive digital experiences with modern technologies.
-
             Specializing in React, Node.js, and MongoDB to build scalable and user-centered applications.Beside
             Exploring New Things Special in Nature.
           </p>
         </div>
-
         <!-- Right Position -->
         <div class="image_container">
           <img src="./Images/0d0d.png" alt="home_images" class="about_image" srcset="" height="auto" />
@@ -135,16 +83,46 @@
     <!-- Card Section -->
     <div class="card_container" id="project">
       <div class="header"> &lt; Project /&gt;</div>
-
       <div class="main_one">
         <!-- 1 -->
         <div class="cards">
           <div class="cart-item">
             <div class="inner_card">
               <div class="card_image">
-                <img src="./Screenshort/Screenshot 2022-08-26 182743.png" class="card_image" alt="" srcset="" />
+                <img src="./assets/Chart.png" class="card_image" alt="image" srcset="" />
               </div>
-
+              <div class="anchor_btn">
+                <a class="card_btn" target="_blank" href="https://anvaya-flow-uwge.vercel.app/"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="card_btn" target="_blank" href="https://github.com/Sourabhpande532/ANVAYA_FLOW"><i
+                    class="fa-solid fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="cards">
+          <div class="cart-item">
+            <div class="inner_card">
+              <div class="card_image">
+                <img src="./assets/Ecommerce.png" class="card_image" alt="" srcset="" />
+              </div>
+              <div class="anchor_btn">
+                <a class="card_btn" target="_blank" href="https://avo-cart-client.vercel.app/"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="card_btn" target="_blank" href="https://github.com/Sourabhpande532/AvoCartClient">
+                  <i class="fa-solid fa-code"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="cards">
+          <div class="cart-item">
+            <div class="inner_card">
+              <div class="card_image">
+                <img src="./assets/roadclone.png" class="card_image" alt="" srcset="" />
+              </div>
               <div class="anchor_btn">
                 <a class="card_btn" target="_blank" href="https://rode-clone-saurabh-creation.netlify.app/"><i
                     class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -155,15 +133,13 @@
             </div>
           </div>
         </div>
-        <!-- 2 -->
+        <!-- 4 -->
         <div class="cards">
           <div class="cart-item">
             <div class="inner_card">
-
               <div class="card_image">
-                <img src="./Screenshort/Scrrenshot.png" class="card_image" alt="" srcset="" />
+                <img src="./assets/shopify.png" class="card_image" alt="" srcset="" />
               </div>
-
               <div class="anchor_btn">
                 <a class="card_btn" target="_blank" href="https://shopify-clone-saurabhp-ineuron.netlify.app/"><i
                     class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -174,58 +150,18 @@
             </div>
           </div>
         </div>
-
-        <!-- 3 -->
-        <div class="cards">
-          <div class="cart-item">
-            <div class="inner_card">
-
-              <div class="card_image">
-                <img src="./Screenshort/Screenshot 2022-08-26 193410.png" class="card_image" alt="" srcset="" />
-              </div>
-
-              <div class="anchor_btn">
-                <a class="card_btn" target="_blank" href="https://paytm-clone-saurabhpande-ineuron-ai.netlify.app/"><i
-                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a class="card_btn" target="_blank"
-                  href="https://github.com/Sourabhpande532/Paytm-Clone-Tailwind-Css-P1-ineuron"><i
-                    class="fa-solid fa-code"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4 -->
-
-        <div class="cards">
-          <div class="cart-item">
-            <div class="inner_card">
-              <div class="card_image">
-                <img src="./Screenshort/project-15.png" class="card_image" alt="" srcset="" />
-              </div>
-
-              <div class="anchor_btn">
-                <a class="card_btn" target="_blank" href="https://visual-designer-ineuro-ai.netlify.app/"><i
-                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a class="card_btn" target="_blank"
-                  href="https://github.com/Sourabhpande532/Project-15-iNeuron.ai-Visual-Designer">
-                  <i class="fa-solid fa-code"></i> </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--main-one  -->
       </div>
     </div>
+    <br /><br />
 
 
     <!-- Skills Section -->
-    <div id="skills" style="padding: 0 2rem;">
+    <div id="skills">
       <div class="header">
         &lt;Skills /&gt;
       </div>
       <div class="skills-container">
-        <div class="skills">
+        <div class="skills" style="padding-top: 3rem;">
           <span class="skillBullet">
             <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/reactjs.svg"
               alt="skillIcon" />
@@ -302,50 +238,44 @@
   </div>
   </div>
   </div>
-  <div class="footer_">
+  <div>
     <div class="header" style="text-align:center"> &lt; connect /&gt;</div>
-
     <!-- footer section -->
     <div class="footer" id="connect">
-      <div class="media-link">
-        <a class="media" rel="noreferrer" class="card_btn" target="_blank" href="https://github.com/Sourabhpande532">
+      <div class="social-links">
+        <a href="https://github.com/Sourabhpande532" target="_blank" rel="noreferrer" class="social-icon">
           <i class="fab fa-github"></i>
         </a>
-
-        <a class="media" rel="noreferrer" class="card_btn" target="_blank"
-          href="https://www.linkedin.com/in/sourabh-pande-412170224">
+        <a href="https://www.linkedin.com/in/sourabh-pande-412170224" target="_blank" rel="noreferrer"
+          class="social-icon">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a class="media" rel="noreferrer" class="card_btn" target="_blank"
-          href="https://www.instagram.com/saurabh_code/">
-          <i class="fa-brands fa-instagram-square"></i>
+        <a href="https://www.instagram.com/saurabh_code/" target="_blank" rel="noreferrer" class="social-icon">
+          <i class="fab fa-instagram"></i>
         </a>
-
-        <a class="media" rel="noreferrer" class="card_btn" target="_blank" href="https://twitter.com/Saurabh28832310">
+        <a href="https://x.com/PandeSaurab" target="_blank" rel="noreferrer" class="social-icon">
           <i class="fab fa-twitter"></i>
         </a>
-
-        <a class="media" rel="noreferrer" class="card_btn" target="_blank" href="mailto:sourabhpande43@gmail.com">
+        <a href="mailto:sourabhpande43@gmail.com" class="social-icon" target="_blank">
           <i class="fa-solid fa-at"></i>
         </a>
       </div>
     </div>
-  </div>
 
 
 
 
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-  <script>
-    $( document ).ready( function() {
-      $( window ).scroll( function() {
-        var positiontop = $( document ).scrollTop();
-        console.log( positiontop )
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script>
+      $( document ).ready( function() {
+        $( window ).scroll( function() {
+          var positiontop = $( document ).scrollTop();
+          console.log( positiontop )
+        } )
       } )
-    } )
-  </script>
+    </script>
 
 
 </body>

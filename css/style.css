@@ -77,6 +77,12 @@ body {
   transition: width 0.3s;
 }
 
+@media screen and (max-width:767px) {
+  .navbar {
+    font-size: xx-small;
+  }
+}
+
 /* .........  */
 
 .intro_section {
@@ -304,7 +310,6 @@ body {
 }
 
 /* blog section */
-
 .blogs-content {
   margin-top: 4rem;
 }
@@ -317,37 +322,43 @@ body {
   padding-bottom: 2rem;
 }
 
-/* footer section  */
-
+/* Footer Section */
 .footer {
   margin-top: 2rem;
-}
-
-.media-link {
-  max-width: 14rem;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 1.3rem auto;
-}
-
-.media {
-  border-radius: 50%;
-  margin: 1.2rem;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: center;
-  width: 1rem;
-  margin: 0.9rem;
-  padding: 0.6rem;
-  align-items: center;
-  background-color: black;
-  width: 2rem;
-  height: 2rem;
 }
 
-.media:hover {
-  background-color: rgb(175, 218, 34);
-  color: black;
+/* Social icons container */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
+
+/* Individual icon */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: rgb(175, 218, 34);
+  color: #000;
+  transform: translateY(-4px);
+}
+
 
 .blogs-content {
   margin-top: 4rem;
@@ -371,4 +382,53 @@ body {
 
 a {
   margin: 13px;
+}
+
+/* SKILLS */
+.skills-container {
+  margin: 3rem auto;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.skillBullet {
+  padding: 0.7rem 2rem;
+  background: #141414;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 2rem;
+}
+
+.skillBullet img {
+  filter: grayscale(100%) contrast(115%);
+}
+
+.icons-colols {
+  background-color: wheat;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.skillBullet:hover {
+  box-shadow: none;
+  background-color: #52525c;
+}
+
+@media screen and (max-width:768px) {
+  .skills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
