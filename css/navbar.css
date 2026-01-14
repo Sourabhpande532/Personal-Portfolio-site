@@ -1,7 +1,4 @@
 .navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: rgba(33, 32, 32, 0.5);
   position: sticky;
   top: 0;
@@ -9,6 +6,14 @@
   border-bottom: 1px solid var(--borderColor);
   padding: 1.3rem;
   margin-bottom: 2.5rem;
+}
+
+.containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 .nav-group {
