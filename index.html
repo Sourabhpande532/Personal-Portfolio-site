@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" class="card_btn" target="_blank" href="./css/style.css" />
   <link rel="stylesheet" href="./css/Responsive.css">
+  <link rel="stylesheet" href='./css/blog.css'>
   <link rel="stylesheet" class="card_btn" target="_blank"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -54,7 +55,6 @@
           <button class="btn"><span>Lets Connect</span></button>
         </a>
       </div>
-
       <div class="image_code">
         <img src="./Images/cycle.png" style="height:auto;" class="fluid-animated" alt="" />
       </div>
@@ -62,7 +62,7 @@
 
     <div class="">
       <div class="header"> &lt; About /&gt;</div>
-      <div class="about_intro" id="#about">
+      <div class="about_intro" id="about">
         <div class="Owner_p">
           <!-- Left Position  -->
           <p style="padding: 0.6rem;">
@@ -81,72 +81,94 @@
 
 
     <!-- Card Section -->
-    <div class="card_container" id="project">
-      <div class="header"> &lt; Project /&gt;</div>
-      <div class="main_one">
-        <!-- 1 -->
-        <div class="cards">
-          <div class="cart-item">
-            <div class="inner_card">
-              <div class="card_image">
-                <img src="./assets/Chart.png" class="card_image" alt="image" srcset="" />
-              </div>
-              <div class="anchor_btn">
-                <a class="card_btn" target="_blank" href="https://anvaya-flow-uwge.vercel.app/"><i
-                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a class="card_btn" target="_blank" href="https://github.com/Sourabhpande532/ANVAYA_FLOW"><i
-                    class="fa-solid fa-code"></i></a>
-              </div>
+    <div class="projects-section" id="project">
+      <div class="projects-header">&lt; Projects /&gt;</div>
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/Chart.png" alt="Anvaya Project" />
+          </div>
+          <div class="project-body">
+            <h3>Anvaya</h3>
+            <p>
+              A MERN stack Anvaya CRM streamlines sales workflows through a centralized
+              data architecture.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://anvaya-flow-uwge.vercel.app/" target="_blank" class="project-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+              <a href="https://github.com/Sourabhpande532/ANVAYA_FLOW" target="_blank" class="project-btn">
+                <i class="fa-solid fa-code"></i> Code
+              </a>
             </div>
           </div>
         </div>
-        <!-- 2 -->
-        <div class="cards">
-          <div class="cart-item">
-            <div class="inner_card">
-              <div class="card_image">
-                <img src="./assets/Ecommerce.png" class="card_image" alt="" srcset="" />
-              </div>
-              <div class="anchor_btn">
-                <a class="card_btn" target="_blank" href="https://avo-cart-client.vercel.app/"><i
-                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a class="card_btn" target="_blank" href="https://github.com/Sourabhpande532/AvoCartClient">
-                  <i class="fa-solid fa-code"></i> </a>
-              </div>
+
+        <!-- Card 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/Ecommerce.png" alt="AvoCart Project" />
+          </div>
+          <div class="project-body">
+            <h3>E-Commerce</h3>
+            <p>
+              A MERN-stack e-commerce application with cart management, authentication,
+              and secure checkout flow.
+            </p>
+
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Stripe</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://avo-cart-client.vercel.app/" target="_blank" class="project-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+              <a href="https://github.com/Sourabhpande532/AvoCartClient" target="_blank" class="project-btn">
+                <i class="fa-solid fa-code"></i> Code
+              </a>
             </div>
           </div>
         </div>
-        <!-- 3 -->
-        <div class="cards">
-          <div class="cart-item">
-            <div class="inner_card">
-              <div class="card_image">
-                <img src="./assets/roadclone.png" class="card_image" alt="" srcset="" />
-              </div>
-              <div class="anchor_btn">
-                <a class="card_btn" target="_blank" href="https://rode-clone-saurabh-creation.netlify.app/"><i
-                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a class="card_btn" target="_blank"
-                  href="https://github.com/Sourabhpande532/Rode-Clone-Tailwind-Css-P3-ineuron-"><i
-                    class="fa-solid fa-code"></i></a>
-              </div>
-            </div>
+
+        <!-- Card 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/roadclone.png" alt="Rode Clone" />
           </div>
-        </div>
-        <!-- 4 -->
-        <div class="cards">
-          <div class="cart-item">
-            <div class="inner_card">
-              <div class="card_image">
-                <img src="./assets/shopify.png" class="card_image" alt="" srcset="" />
-              </div>
-              <div class="anchor_btn">
-                <a class="card_btn" target="_blank" href="https://shopify-clone-saurabhp-ineuron.netlify.app/"><i
-                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a class="card_btn" target="_blank"
-                  href="https://github.com/Sourabhpande532/Shopify-Clone-Tailwind-Css-P2-ineuron-"><i
-                    class="fa-solid fa-code"></i></a>
-              </div>
+
+          <div class="project-body">
+            <h3>RØDE Clone</h3>
+            <p>
+              A responsive front-end clone of the RØDE website built using Tailwind CSS
+              with pixel-perfect UI.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>Tailwind CSS</span>
+              <span>Responsive UI</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://rode-clone-saurabh-creation.netlify.app/" target="_blank" class="project-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+              <a href="https://github.com/Sourabhpande532/Rode-Clone-Tailwind-Css-P3-ineuron-" target="_blank"
+                class="project-btn">
+                <i class="fa-solid fa-code"></i> Code
+              </a>
             </div>
           </div>
         </div>
@@ -154,6 +176,69 @@
     </div>
     <br /><br />
 
+    <!-- Blogs section -->
+    <section class="blogs-section" id="blogs">
+      <div class="blogs-header">&lt; Blogs /&gt;</div>
+
+      <div class="blogs-grid">
+
+        <!-- Blog Card 1 -->
+        <a href="https://saurabh532.hashnode.dev/how-to-create-stunning-html-apps-without-css-a-game-changer"
+          class="blog-link">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="https://picocss.com/opengraph.png" alt="picocss" />
+            </div>
+
+            <div class="blog-content">
+              <h3>♻ PICOCSS</h3>
+              <p class="blog-date">July 28, 2025</p>
+              <div class="blog-meta">
+                <span>⏱ 3 min read</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Blog Card 2 -->
+        <a href="https://saurabh532.hashnode.dev/quick-overview-an-v8-engine-how-does-actually-work" class="blog-link">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQcWuRu5O94s9pG7t1grpygRbNnGbs4bVVIA&s"
+                alt="v8 imgage" />
+            </div>
+
+            <div class="blog-content">
+              <h3>🪝 V8 Js Engine</h3>
+              <p class="blog-date">Dec 4, 2022</p>
+              <div class="blog-meta">
+                <span>⏱ 3 min read</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Blog Card 3 -->
+        <a href="https://saurabh532.hashnode.dev/quick-guideline-of-array-methods-and-usage-in-javascript"
+          class="blog-link">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img
+                src="https://cdn-media-1.freecodecamp.org/images/HjKZtf6JKxcrH8t51iRrId-4lTqjOlGtICip"
+                alt="array" />
+            </div>
+
+            <div class="blog-content">
+              <h3>Explored Array</h3>
+              <p class="blog-date">Oct 5, 2022</p>
+              <div class="blog-meta">
+                <span>⏱ 3 min read</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
 
     <!-- Skills Section -->
     <div id="skills">
