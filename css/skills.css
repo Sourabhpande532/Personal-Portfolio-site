@@ -1,0 +1,48 @@
+/* SKILLS */
+.skills-container {
+  margin: 3rem auto;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.skillBullet {
+  padding: 0.7rem 2rem;
+  background: #141414;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 2rem;
+}
+
+.skillBullet img {
+  filter: grayscale(100%) contrast(115%);
+}
+
+.icons-colols {
+  background-color: wheat;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.skillBullet:hover {
+  box-shadow: none;
+  background-color: #52525c;
+}
+
+@media screen and (max-width:768px) {
+  .skills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

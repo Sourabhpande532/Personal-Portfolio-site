@@ -1,7 +1,7 @@
 :root {
   --primaryRed: #ec0d13;
   --primaryEmerald: #34d399;
-  --primaryPurple: #a668f2;
+  --primaryPurple: #7c3e66;
   --borderColor: #374151;
   --bgPrimary: #0b111c;
   --bgSecondary: #0e1522;
@@ -35,55 +35,6 @@ body {
   padding: 2rem 0;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(33, 32, 32, 0.5);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  border-bottom: 1px solid var(--borderColor);
-  padding: 1.3rem;
-  margin-bottom: 2.5rem;
-}
-
-.nav-group {
-  min-width: 15rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-.nav-brand {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: inherit;
-  transition: 0.1s all;
-}
-
-.nav-link:hover {
-  color: var(--primaryEmerald);
-}
-
-.nav-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0.5px;
-  background-color: plum;
-  transition: width 0.3s;
-}
-
-@media screen and (max-width:767px) {
-  .navbar {
-    font-size: xx-small;
-  }
-}
-
 /* .........  */
 .intro_section {
   display: flex;
@@ -100,7 +51,7 @@ body {
 .heading_one {
   font-weight: bold;
   text-transform: capitalize;
-  color: #7c3e66;
+  color: var(--primaryPurple);
   font-size: 1.3rem;
   margin-bottom: 1rem;
   margin-left: 0.1rem;
@@ -241,133 +192,6 @@ body {
   background: #0d0d0d;
 }
 
-
-/* Project Section */
-.header {
-  padding: 1.7rem 0;
-}
-
-/* Section */
-.projects-section {
-  padding: 3rem 1rem;
-}
-
-/* Header */
-.projects-header {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-  color: #fff;
-}
-
-/* Grid */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Card */
-.project-card {
-  background-color: #0f0f0f;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
-}
-
-.project-card:hover .project-image img {
-  transform: scale(1.03);
-  transition: transform 0.3s ease;
-}
-
-.project-image img {
-  height: 150px;
-  /* width: 100%; */
-  filter: brightness(100%) contrast(120%);
-}
-
-.project-body {
-  padding: 1rem;
-}
-
-.project-body p {
-  font-size: 0.9rem;
-  line-height: 1.3;
-  flex-grow: 1;
-  color: #cfcfcf;
-}
-
-/* Tech stack */
-.project-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0.8rem 0 1rem;
-}
-
-.project-tech span {
-  background-color: #1e1e1e;
-  padding: 0.35rem 0.65rem;
-  border-radius: 12px;
-  font-size: 0.75rem;
-}
-
-/* Buttons */
-.project-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.project-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.45rem 0.8rem;
-  border-radius: 20px;
-  background-color: #1c1c1c;
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.8rem;
-  transition: all 0.3s ease;
-}
-
-.project-btn:hover {
-  background-color: #e5d68a;
-  color: #000;
-  transform: translateY(-2px);
-}
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* blog section */
-.blogs-content {
-  margin-top: 4rem;
-}
-
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 /* Footer Section */
 .footer {
   margin-top: 2rem;
@@ -405,7 +229,6 @@ body {
   transform: translateY(-4px);
 }
 
-
 .blogs-content {
   margin-top: 4rem;
 }
@@ -430,51 +253,3 @@ a {
   margin: 13px;
 }
 
-/* SKILLS */
-.skills-container {
-  margin: 3rem auto;
-}
-
-.skills {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25rem;
-  align-items: stretch;
-}
-
-.skillBullet {
-  padding: 0.7rem 2rem;
-  background: #141414;
-  color: inherit;
-  font-family: inherit;
-  font-size: 1rem;
-  border-radius: 0.25rem;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  padding: 2rem;
-}
-
-.skillBullet img {
-  filter: grayscale(100%) contrast(115%);
-}
-
-.icons-colols {
-  background-color: wheat;
-  border-radius: 20px;
-  padding: 2px;
-}
-
-.skillBullet:hover {
-  box-shadow: none;
-  background-color: #52525c;
-}
-
-@media screen and (max-width:768px) {
-  .skills {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
