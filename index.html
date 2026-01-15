@@ -12,7 +12,11 @@
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/card.css">
   <link rel="stylesheet" href="./css/skills.css">
-
+  <head>
+    <link rel="stylesheet" href="cdnjs.cloudflare.com"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta+1BAoxe_B7UeBAoedlAX9AGtXlaikS4yMhQZMIyBPQvQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
   <link rel="stylesheet" class="card_btn" target="_blank"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -41,50 +45,30 @@
       </div>
     </div>
   </div>
-
-
   <div class="App">
-    <div class="intro_section">
-      <div class="intro_content">
-        <span class="heading_one">HEY THERE !</span>
-        <h1 style="font-size: 3rem;
-           font-family: 'Spartan', sans-serif;
-           color: transparent;
-          -webkit-text-stroke-width: 2.6px;
-          -webkit-text-stroke-color: #fff;">
-          I'm<span class="name">Sourabh</span>
-        </h1>
-        <h3>
-          <span class="heading_three">full stack dev.<br />
-            Love To Work on End-to-End.</span>
-        </h3>
-        <a style="display: block" href="#connect">
-          <button class="btn"><span>Lets Connect</span></button>
-        </a>
-      </div>
-      <div class="image_code">
-        <img src="./Images/cycle.png" style="height:auto;" class="fluid-animated" alt="" />
-      </div>
-    </div>
-
-    <div class="">
-      <div class="header"> &lt; About /&gt;</div>
-      <div class="about_intro" id="about">
-        <div class="Owner_p">
-          <!-- Left Position  -->
-          <p style="padding: 0.6rem;">
-            Hello ! I'm <span class="heading_one"> Sourabh Pande </span><br />
-            Passionate full-stack developer crafting intuitive digital experiences with modern technologies.
-            Specializing in React, Node.js, and MongoDB to build scalable and user-centered applications.Beside the
-            digital world love to wonder in nature during monsoon.
-          </p>
-        </div>
-        <!-- Right Position -->
-        <div class="image_container">
-          <img src="./Images/0d0d.png" alt="home_images" class="about_image" srcset="" height="auto" />
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <h1 class="hero-name">Sourabh Pande</h1>
+        <h3 class="hero-role">full stack dev</h3>
+        <div class="underline"></div>
+        <small class="hero-desc">
+          Passionate full-stack developer focused on building intuitive, scalable, and user-centric digital experiences
+          using modern technologies.
+        </small><br />
+        <small class="hero-desc">
+          Specialized in React, Node.js, and MongoDB. Outside the digital world, I enjoy exploring nature—especially
+          during the monsoon.
+        </small>
+        <div class="hero-buttons">
+          <a href="#connect" class="btn primary">Contact Me</a>
+          <a href="./resume.pdf" class="btn secondary" target="_blank">Resume</a>
         </div>
       </div>
-    </div><br><br>
+      <div class="hero-image">
+        <img src="./Images/cycle.png" alt="code illustration" />
+      </div>
+    </section>
+    <br><br>
     <!-- Card Section -->
     <div class="projects-section" id="project">
       <div class="projects-header">&lt; Projects /&gt;</div>
@@ -92,7 +76,7 @@
         <!-- Card 1 -->
         <div class="project-card">
           <div class="project-image">
-            <img src="./assets/Chart.png" alt="Anvaya Project" />
+            <img src="./assets/Anvaya.png" alt="Anvaya Project" />
           </div>
           <div class="project-body">
             <h3>Anvaya</h3>
@@ -229,15 +213,15 @@
         </a>
       </div>
     </section>
-
+    <br /><br />
+    
     <!-- Skills Section -->
-
     <div id="skills">
       <div class="header">
         &lt;Skills /&gt;
       </div>
       <div class="skills-container">
-        <div class="skills" style="padding-top: 3rem;">
+        <div class="skills" style="padding-top: 2rem;">
           <span class="skillBullet">
             <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/reactjs.svg"
               alt="skillIcon" />
@@ -329,8 +313,8 @@
         <a href="https://x.com/PandeSaurab" target="_blank" rel="noreferrer" class="social-icon">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="mailto:sourabhpande43@gmail.com" class="social-icon" target="_blank">
-          <i class="fa-solid fa-at"></i>
+        <a href="mailto:sourabhpande43@gmail.com" target="_blank" rel="noreferrer" class="social-icon">
+          <i class="fas fa-envelope"></i>
         </a>
       </div>
     </div>

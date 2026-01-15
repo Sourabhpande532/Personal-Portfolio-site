@@ -10,10 +10,11 @@
 
 /* Header */
 .projects-header {
-  text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 2.5rem;
+  padding: 1rem 0;
   color: #fff;
+  filter: brightness(50%) contrast(140%);
 }
 
 /* Grid */
@@ -43,7 +44,7 @@
 .project-image img {
   height: 150px;
   width: 100%;
-  filter: brightness(100%) contrast(120%);
+  filter: brightness(105%) contrast(120%);
 }
 
 .project-body {
