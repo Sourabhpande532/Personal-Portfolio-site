@@ -12,25 +12,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 50rem;
+  max-width: 64rem;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .nav-group {
-  min-width: 15rem;
   display: flex;
-  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
 }
 
 .nav-brand {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
 }
 
 .nav-link {
   text-decoration: none;
-  color: inherit;
-  transition: 0.1s all;
+  color: #d1d5db;
+  transition: color 0.2s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.25rem 0;
 }
 
 .nav-link:hover {
@@ -41,13 +47,30 @@
   content: "";
   display: block;
   width: 0;
-  height: 0.5px;
-  background-color: plum;
-  transition: width 0.3s;
+  height: 2px;
+  background-color: var(--primaryEmerald);
+  transition: width 0.3s ease;
+  margin-top: 2px;
 }
 
-@media screen and (max-width:767px) {
+.nav-link:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
   .navbar {
-    font-size: xx-small;
+    padding: 1rem;
+  }
+  .containers {
+    padding: 0 1rem;
+  }
+  .nav-brand {
+    font-size: 1.1rem;
+  }
+  .nav-group {
+    gap: 1.2rem;
+  }
+  .nav-link {
+    font-size: 0.9rem;
   }
 }
