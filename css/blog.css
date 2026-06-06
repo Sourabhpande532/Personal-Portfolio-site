@@ -126,23 +126,17 @@
 
 /* =========================
    Responsive Breakpoints
+   — No 2-col step: goes 3-col → 1-col directly
 ========================= */
 
-@media (max-width: 1024px) {
-  .blogs-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .blogs-section {
     padding: 2.5rem 0;
   }
   .blogs-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    max-width: 450px;
+    gap: 1.25rem;
+    max-width: 480px;
     margin: 0 auto;
   }
   .blog-image {
