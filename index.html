@@ -22,7 +22,7 @@
     <div class="containers">
       <div class="nav-brand">
         <span class="nav-brand-heading">
-          <a href="#about" style="text-decoration: none; color: aliceblue;">Sourabh Pande</a>
+          <a href="#about">Sourabh Pande</a>
         </span>
       </div>
       <!-- Hamburger button (mobile only) -->
@@ -51,9 +51,12 @@
   <div class="App">
     <section class="hero" id="about">
       <div class="hero-content">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          Available for full-time opportunities
+        </div>
         <h1 class="hero-name">Sourabh Pande</h1>
-        <h3 class="hero-role">Full Stack Developer</h3>
-        <div class="underline"></div>
+        <h2 class="hero-role">Full Stack Developer <span>&amp; MERN Specialist</span></h2>
         <p class="hero-desc">
           Passionate full-stack developer focused on building intuitive, scalable, and user-centric digital experiences
           using modern technologies.
@@ -63,69 +66,68 @@
           modern applications. Outside the digital world, I enjoy exploring nature—especially during the monsoon.
         </p>
         <div class="hero-buttons">
-          <a href="#connect" class="btn primary">Contact Me</a>
+          <a href="#connect" class="btn primary">
+            <i class="fa-solid fa-paper-plane"></i>
+            Contact Me
+          </a>
           <a href="https://drive.google.com/file/d/1p_NRlYDY1ivXb-S1aDnvy672uhbRIFAW/view?usp=sharing" target="_blank"
-            class="btn secondary">Resume</a>
-        </div>
-        <div class="scroll-indicator">
-          <div class="scroll-mouse">
-            <span class="scroll-wheel"></span>
-          </div>
-          <span class="scroll-text">Scroll</span>
+            class="btn secondary">
+            Resume
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </div>
       </div>
       <div class="hero-image">
-        <img src="./Images/cycle.png" alt="code illustration" />
+        <div class="hero-image-frame">
+          <img src="./Images/cycle.png" alt="Sourabh Pande - Full Stack Developer Illustration" />
+        </div>
       </div>
     </section>
-    <br><br>
 
     <!-- Projects Section -->
-    <div class="projects-section" id="project">
+    <section class="projects-section" id="project">
+      <div class="section-header">
+        <span class="section-eyebrow">01 // Selected Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          Full-stack web applications and AI-powered systems built with scalable architecture and clean code.
+        </p>
+      </div>
 
-      <h2 class="section-title">&lt; Projects /&gt;</h2>
       <div class="projects-grid">
 
+        <!-- Project 1 -->
         <div class="project-card">
-          <span class="project-number">01</span>
+          <div class="project-card-header">
+            <span class="project-category">Full Stack / AI Platform</span>
+            <span class="project-index">01</span>
+          </div>
           <div class="project-image-wrapper">
-            <div class="browser-bar">
-              <div class="browser-dots">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-              </div>
-              <span class="browser-url">https://talenthub-client-rho.vercel.app</span>
-            </div>
-            <div class="project-image">
-              <img src="./assets/talenthub.png" alt="HubProject" />
-            </div>
+            <img src="./assets/talenthub.png" alt="TalentHub – AI-Powered Hiring Platform Preview" />
           </div>
 
           <div class="project-body">
-            <h3>TalentHub – AI-Powered Hiring Platform</h3>
-
-            <p>
-              A full-stack AI-powered hiring platform where Recruiters can post and manage jobs, and Applicants can
-              discover opportunities, apply for jobs, and prepare for interviews
+            <h3 class="project-title">TalentHub – AI-Powered Hiring Platform</h3>
+            <p class="project-desc">
+              A full-stack AI-powered hiring platform where recruiters can post and manage jobs, and applicants can
+              discover opportunities, apply for jobs, and prepare for interviews.
             </p>
 
             <div class="project-tech">
-              <span class="tag-blue">Redux Toolkit</span>
-              <span class="tag-orange">RBAC</span>
-              <span class="tag-orange">MVC</span>
-              <span class="tag-orange">JWT</span>
+              <span>Redux Toolkit</span>
+              <span>RBAC</span>
+              <span>MVC</span>
+              <span>JWT</span>
             </div>
 
             <div class="project-links">
-              <a href="https://talenthub-client-rho.vercel.app/" target="_blank" class="project-btn">
+              <a href="https://talenthub-client-rho.vercel.app/" target="_blank" class="project-btn primary">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 Live Demo
               </a>
-
-              <a href="https://github.com/Sourabhpande532/talenthub-client" target="_blank" class="project-btn">
+              <a href="https://github.com/Sourabhpande532/talenthub-client" target="_blank" class="project-btn secondary">
                 <i class="fa-brands fa-github"></i>
-                Source
+                Source Code
               </a>
             </div>
           </div>
@@ -133,46 +135,37 @@
 
         <!-- Project 2 -->
         <div class="project-card">
-          <span class="project-number">02</span>
+          <div class="project-card-header">
+            <span class="project-category">Enterprise AI Assistant</span>
+            <span class="project-index">02</span>
+          </div>
           <div class="project-image-wrapper">
-            <div class="browser-bar">
-              <div class="browser-dots">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-              </div>
-              <span class="browser-url">astra-a-is-bd1o.vercel.app</span>
-            </div>
-            <div class="project-image">
-              <img src="./assets/ai.png" alt="astra-ai" />
-            </div>
+            <img src="./assets/ai.png" alt="AstraAIs – AI-Powered Employee Assistant Preview" />
           </div>
 
           <div class="project-body">
-            <h3>AstraAIs — AI-Powered Employee Assistant</h3>
-
-            <p>
+            <h3 class="project-title">AstraAIs — AI-Powered Employee Assistant</h3>
+            <p class="project-desc">
               AI-driven employee management system with leave tracking, policy assistance, scheduling, and growth
               analytics.
             </p>
 
             <div class="project-tech">
-              <span class="tag-blue">TypeScript</span>
-              <span class="tag-purple">RAG</span>
-              <span class="tag-purple">Agentic-AI</span>
-              <span class="tag-green">MERN</span>
-              <span class="tag-green">JWT</span>
+              <span>TypeScript</span>
+              <span>RAG</span>
+              <span>Agentic-AI</span>
+              <span>MERN</span>
+              <span>JWT</span>
             </div>
 
             <div class="project-links">
-              <a href="https://astra-a-is-bd1o.vercel.app/" target="_blank" class="project-btn">
+              <a href="https://astra-a-is-bd1o.vercel.app/" target="_blank" class="project-btn primary">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 Live Demo
               </a>
-
-              <a href="https://github.com/Sourabhpande532/AstraAIs" target="_blank" class="project-btn">
+              <a href="https://github.com/Sourabhpande532/AstraAIs" target="_blank" class="project-btn secondary">
                 <i class="fa-brands fa-github"></i>
-                Source
+                Source Code
               </a>
             </div>
           </div>
@@ -180,47 +173,37 @@
 
         <!-- Project 3 -->
         <div class="project-card">
-          <span class="project-number">03</span>
+          <div class="project-card-header">
+            <span class="project-category">E-Commerce Platform</span>
+            <span class="project-index">03</span>
+          </div>
           <div class="project-image-wrapper">
-            <div class="browser-bar">
-              <div class="browser-dots">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-              </div>
-              <span class="browser-url">avo-cart-client.vercel.app</span>
-            </div>
-            <div class="project-image">
-              <img src="./assets/ecom.png" alt="AvoCart Project" />
-            </div>
+            <img src="./assets/ecom.png" alt="AvoCart E-Commerce Platform Preview" />
           </div>
 
           <div class="project-body">
-            <h3>AvoCart — E-commerce Platform </h3>
-
-            <p>
-              Modern MERN e-commerce platform with AI chatbot,
-              cart management, and smooth shopping experience.
+            <h3 class="project-title">AvoCart — E-commerce Platform</h3>
+            <p class="project-desc">
+              Modern MERN e-commerce platform with AI chatbot, cart management, and smooth shopping experience.
             </p>
 
             <div class="project-tech">
-              <span class="tag-green">React</span>
-              <span class="tag-green">Node.js</span>
-              <span class="tag-green">MongoDB</span>
-              <span class="tag-green">Express</span>
-              <span class="tag-green">JWT</span>
-              <span class="tag-blue">OAuth 2.0 (Google/GitHub)</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Express</span>
+              <span>JWT</span>
+              <span>OAuth 2.0</span>
             </div>
 
             <div class="project-links">
-              <a href="https://avo-cart-client.vercel.app/" target="_blank" class="project-btn">
+              <a href="https://avo-cart-client.vercel.app/" target="_blank" class="project-btn primary">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 Live Demo
               </a>
-
-              <a href="https://github.com/Sourabhpande532/AvoCartClient" target="_blank" class="project-btn">
+              <a href="https://github.com/Sourabhpande532/AvoCartClient" target="_blank" class="project-btn secondary">
                 <i class="fa-brands fa-github"></i>
-                Source
+                Source Code
               </a>
             </div>
           </div>
@@ -228,45 +211,36 @@
 
         <!-- Project 4 -->
         <div class="project-card">
-          <span class="project-number">04</span>
+          <div class="project-card-header">
+            <span class="project-category">Project Management</span>
+            <span class="project-index">04</span>
+          </div>
           <div class="project-image-wrapper">
-            <div class="browser-bar">
-              <div class="browser-dots">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-              </div>
-              <span class="browser-url">collab-core-br21.vercel.app</span>
-            </div>
-            <div class="project-image">
-              <img src="./assets/workasana.png" alt="Workasana Project" />
-            </div>
+            <img src="./assets/workasana.png" alt="CollabCore Project Management Preview" />
           </div>
 
           <div class="project-body">
-            <h3>CollabCore — Project Management Application</h3>
-            <p>
-              Team collaboration and project management platform
-              with authentication and task tracking features.
+            <h3 class="project-title">CollabCore — Project Management Application</h3>
+            <p class="project-desc">
+              Team collaboration and project management platform with authentication and task tracking features.
             </p>
 
             <div class="project-tech">
-              <span class="tag-green">React</span>
-              <span class="tag-green">Express</span>
-              <span class="tag-green">Node.js</span>
-              <span class="tag-green">MongoDB</span>
-              <span class="tag-blue">JWT</span>
+              <span>React</span>
+              <span>Express</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>JWT</span>
             </div>
 
             <div class="project-links">
-              <a href="https://collab-core-br21.vercel.app/" target="_blank" class="project-btn">
+              <a href="https://collab-core-br21.vercel.app/" target="_blank" class="project-btn primary">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 Live Demo
               </a>
-
-              <a href="https://github.com/Sourabhpande532/CollabCore" target="_blank" class="project-btn">
+              <a href="https://github.com/Sourabhpande532/CollabCore" target="_blank" class="project-btn secondary">
                 <i class="fa-brands fa-github"></i>
-                Source
+                Source Code
               </a>
             </div>
           </div>
@@ -274,45 +248,35 @@
 
         <!-- Project 5 -->
         <div class="project-card">
-          <span class="project-number">05</span>
+          <div class="project-card-header">
+            <span class="project-category">Media Management AI</span>
+            <span class="project-index">05</span>
+          </div>
           <div class="project-image-wrapper">
-            <div class="browser-bar">
-              <div class="browser-dots">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-              </div>
-              <span class="browser-url">imgixy-1f4i.vercel.app</span>
-            </div>
-            <div class="project-image">
-              <img src="./assets/kavioPix.png" alt="KavioPix Project" />
-            </div>
+            <img src="./assets/kavioPix.png" alt="Imgixy AI Photo Library Preview" />
           </div>
 
           <div class="project-body">
-            <h3>Imgixy — AI Photo Library</h3>
-
-            <p>
-              AI-powered photo management app with secure uploads,
-              smart organization, and image sharing.
+            <h3 class="project-title">Imgixy — AI Photo Library</h3>
+            <p class="project-desc">
+              AI-powered photo management app with secure uploads, smart organization, and image sharing.
             </p>
 
             <div class="project-tech">
-              <span class="tag-blue">TypeScript</span>
-              <span class="tag-orange">Cloudinary</span>
-              <span class="tag-orange">OAuth 2.0 (Google)</span>
-              <span class="tag-orange">JWT</span>
+              <span>TypeScript</span>
+              <span>Cloudinary</span>
+              <span>OAuth 2.0</span>
+              <span>JWT</span>
             </div>
 
             <div class="project-links">
-              <a href="https://imgixy-1f4i.vercel.app/" target="_blank" class="project-btn">
+              <a href="https://imgixy-1f4i.vercel.app/" target="_blank" class="project-btn primary">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 Live Demo
               </a>
-
-              <a href="https://github.com/Sourabhpande532/Imgixy" target="_blank" class="project-btn">
+              <a href="https://github.com/Sourabhpande532/Imgixy" target="_blank" class="project-btn secondary">
                 <i class="fa-brands fa-github"></i>
-                Source
+                Source Code
               </a>
             </div>
           </div>
@@ -320,224 +284,282 @@
 
         <!-- Project 6 -->
         <div class="project-card">
-          <span class="project-number">06</span>
+          <div class="project-card-header">
+            <span class="project-category">Real-Time Messaging</span>
+            <span class="project-index">06</span>
+          </div>
           <div class="project-image-wrapper">
-            <div class="browser-bar">
-              <div class="browser-dots">
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-              </div>
-              <span class="browser-url">https://chat-flow-swart.vercel.app/</span>
-            </div>
-            <div class="project-image">
-              <img src="./assets/chat.png" alt="Chat Project" />
-            </div>
+            <img src="./assets/chat.png" alt="Chat Flow Real-Time Messenger Preview" />
           </div>
 
           <div class="project-body">
-            <h3>Chat APP</h3>
-
-            <p>
-             A real-time chat application that allows users to register, login, and communicate instantly with other users using WebSockets
+            <h3 class="project-title">Chat APP — Real-Time Messenger</h3>
+            <p class="project-desc">
+              A real-time chat application that allows users to register, login, and communicate instantly with other users using WebSockets.
             </p>
 
             <div class="project-tech">
-              <span class="tag-blue">WebSocket</span>
-              <span class="tag-orange">MERN</span>
-              <span class="tag-orange">Node.js</span>
-              <span class="tag-orange">JWT</span>
+              <span>WebSocket</span>
+              <span>MERN</span>
+              <span>Node.js</span>
+              <span>JWT</span>
             </div>
 
             <div class="project-links">
-              <a href="https://chat-flow-swart.vercel.app/" target="_blank" class="project-btn">
+              <a href="https://chat-flow-swart.vercel.app/" target="_blank" class="project-btn primary">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 Live Demo
               </a>
-
-              <a href="https://github.com/Sourabhpande532/CHAT_FLOW" target="_blank" class="project-btn">
+              <a href="https://github.com/Sourabhpande532/CHAT_FLOW" target="_blank" class="project-btn secondary">
                 <i class="fa-brands fa-github"></i>
-                Source
+                Source Code
               </a>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
+    </section>
 
     <!-- Blogs section -->
     <section class="blogs-section" id="blogs">
-      <h2 class="section-title">&lt; Blogs /&gt;</h2>
+      <div class="section-header">
+        <span class="section-eyebrow">02 // Writings &amp; Insights</span>
+        <h2 class="section-title">Articles &amp; Publications</h2>
+        <p class="section-subtitle">
+          In-depth technical articles on JavaScript internals, modern web patterns, and automation workflows.
+        </p>
+      </div>
+
       <div class="blogs-grid">
         <!-- Blog Card 1 -->
-        <!-- Blog Card 2 -->
         <a href="https://saurabh532.hashnode.dev/mastering-the-javascript-event-loop-microtasks-vs-macrotasks-with-example"
           target="_blank" class="blog-link">
           <div class="blog-card">
             <div class="blog-image">
-              <img src="./Images/event-loop.png" alt="array" />
+              <img src="./Images/event-loop.png" alt="JavaScript Event Loop Article Illustration" />
             </div>
             <div class="blog-content">
-              <h3>Event Loop</h3>
-              <p class="blog-date">March 17,2026</p>
-              <div class="blog-meta">
-                <span>⏱ 6 min read</span>
+              <div class="blog-meta-top">
+                <span class="blog-platform-badge">
+                  <i class="fa-brands fa-hashnode"></i>
+                  Hashnode
+                </span>
+                <span class="blog-read-time">6 min read</span>
+              </div>
+              <h3 class="blog-title">Mastering the JavaScript Event Loop</h3>
+              <p class="blog-date">March 17, 2026</p>
+              <div class="blog-footer-link">
+                <span>Read Article</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </a>
-        <!-- Blog Card 3 -->
+
+        <!-- Blog Card 2 -->
         <a href="https://saurabh532.hashnode.dev/the-closure-cookbook-practical-recipes-for-real-world-javascript"
           target="_blank" class="blog-link">
           <div class="blog-card">
             <div class="blog-image">
-              <img src="./assets/Closures-In-JavaScript-Calibraint.webp" alt="v8 imgage" />
+              <img src="./assets/Closures-In-JavaScript-Calibraint.webp" alt="JavaScript Closures Article Illustration" />
             </div>
             <div class="blog-content">
-              <h3>Closure</h3>
-              <p class="blog-date">Dec 4, 2022</p>
-              <div class="blog-meta">
-                <span>⏱ 3 min read</span>
+              <div class="blog-meta-top">
+                <span class="blog-platform-badge">
+                  <i class="fa-brands fa-hashnode"></i>
+                  Hashnode
+                </span>
+                <span class="blog-read-time">3 min read</span>
+              </div>
+              <h3 class="blog-title">The Closure Cookbook: Practical Recipes for JavaScript</h3>
+              <p class="blog-date">December 4, 2022</p>
+              <div class="blog-footer-link">
+                <span>Read Article</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </a>
+
+        <!-- Blog Card 3 -->
         <a href="https://saurabh532.hashnode.dev/beginners-guide-to-ci-cd-how-automation-saved-my-weekends?utm_source=hashnode&utm_medium=feed"
           class="blog-link" target="_blank">
           <div class="blog-card">
             <div class="blog-image">
-              <img src="./assets/cicd.png" alt="cicd" />
+              <img src="./assets/cicd.png" alt="CI/CD Automation Guide Illustration" />
             </div>
             <div class="blog-content">
-              <h3>CICD</h3>
+              <div class="blog-meta-top">
+                <span class="blog-platform-badge">
+                  <i class="fa-brands fa-hashnode"></i>
+                  Hashnode
+                </span>
+                <span class="blog-read-time">5 min read</span>
+              </div>
+              <h3 class="blog-title">Beginner's Guide to CI/CD: How Automation Saved My Weekends</h3>
               <p class="blog-date">June 22, 2026</p>
-              <div class="blog-meta">
-                <span>⏱ 5 min read</span>
+              <div class="blog-footer-link">
+                <span>Read Article</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </div>
             </div>
           </div>
         </a>
       </div>
     </section>
-    <br />
 
     <!-- Skills Section -->
-    <div id="skills">
-      <h2 class="section-title">&lt; Skills /&gt;</h2>
-      <div class="skills-container">
-        <div class="skills">
-          <span class="skillBullet skill-frontend">
-            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/reactjs.svg"
-              alt="skillIcon" />
-            React
-          </span>
-          <!-- 2 -->
-          <span class="skillBullet skill-backend">
-            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/nodejs.svg"
-              alt="skillIcon" />
-            Node.js
-          </span>
-          <!-- 3 -->
-          <span class="skillBullet skill-backend">
-            <img width="30" height="30"
-              src="https://cdn.iconscout.com/icon/premium/png-512-thumb/express-js-icon-svg-download-png-9200748.png?f=webp&w=512"
-              class="icons-colo" alt="skillIcon" />
-            Express.js
-          </span>
-          <!-- 4 -->
-          <span class="skillBullet skill-backend">
-            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/mongodb.svg"
-              alt="skillIcon">
-            MongoDB
-          </span>
-          <!-- 5 -->
-          <span class="skillBullet skill-frontend">
-            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/javascript.svg"
-              alt="skillIcon">
-            JavaScript
-          </span>
-          <!-- 6 -->
-          <span class="skillBullet skill-frontend">
-            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/html.svg" alt="skillIcon">
-            HTML
-          </span>
-          <!-- 7 -->
-          <span class="skillBullet skill-frontend">
-            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/css.svg" alt="skillIcon">
-            CSS
-          </span>
-          <!-- 8 -->
-          <span class="skillBullet skill-frontend">
-            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/typescript.svg"
-              alt="skillIcon">
-            TypeScript
-          </span>
-          <!-- 9 -->
-          <span class="skillBullet skill-frontend">
-            <img width="30" height="30" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/bootstrap.svg"
-              alt="skillIcon">
-            Bootstrap
-          </span>
-          <!-- 10 -->
-          <span class="skillBullet skill-tools">
-            <img width="30" height="30"
-              src="https://cdn.iconscout.com/icon/free/png-512/free-vscode-icon-svg-download-png-10918898.png?f=webp&w=512"
-              alt="skillIcon">
-            VS Code
-          </span>
-          <!-- 11  -->
-          <span class="skillBullet skill-tools">
-            <img width="30" height="30"
-              src="https://cdn.iconscout.com/icon/free/png-512/free-github-icon-svg-download-png-3073768.png?f=webp&w=512"
-              alt="skillIcon">
-            GitHub
-          </span>
-          <!-- 12 -->
-          <span class="skillBullet skill-tools">
-            <img width="30" height="30"
-              src="https://cdn.iconscout.com/icon/free/png-512/free-shape-icon-svg-download-png-3051365.png?f=webp&w=512"
-              class="icons-colols" alt="skillIcon">
-            Vercel
-          </span>
+    <section class="skills-section" id="skills">
+      <div class="section-header">
+        <span class="section-eyebrow">03 // Capabilities</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">
+          Core technologies, libraries, and developer tools I leverage to build scalable full-stack products.
+        </p>
+      </div>
+
+      <div class="skills-categories-grid">
+        <!-- Category 1: Frontend -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-code skill-category-icon"></i>
+            <div>
+              <h3 class="skill-category-title">Frontend Engineering</h3>
+              <p class="skill-category-desc">UI components, responsive layouts, and modern web standards</p>
+            </div>
+          </div>
+          <div class="skill-items-grid">
+            <div class="skill-item">
+              <img width="28" height="28" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/reactjs.svg" alt="React" />
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/javascript.svg" alt="JavaScript" />
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/typescript.svg" alt="TypeScript" />
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/html.svg" alt="HTML" />
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/css.svg" alt="CSS" />
+              <span>CSS</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/bootstrap.svg" alt="Bootstrap" />
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Backend & Database -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-server skill-category-icon"></i>
+            <div>
+              <h3 class="skill-category-title">Backend &amp; Databases</h3>
+              <p class="skill-category-desc">REST APIs, server architecture, relational &amp; document databases</p>
+            </div>
+          </div>
+          <div class="skill-items-grid">
+            <div class="skill-item">
+              <img width="28" height="28" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/nodejs.svg" alt="Node.js" />
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="./assets/python.svg" alt="Python" />
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/express-js-icon-svg-download-png-9200748.png?f=webp&w=512" class="icons-colo" alt="Express.js" />
+              <span>Express.js</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="./assets/postgresql.svg" alt="PostgreSQL" />
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="https://d26c7l40gvbbg2.cloudfront.net/tool_icons/mongodb.svg" alt="MongoDB" />
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="./assets/sql.svg" alt="SQL" />
+              <span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Developer Tools & Platforms -->
+        <div class="skill-category-card">
+          <div class="skill-category-header">
+            <i class="fa-solid fa-screwdriver-wrench skill-category-icon"></i>
+            <div>
+              <h3 class="skill-category-title">Tools &amp; AI Architecture</h3>
+              <p class="skill-category-desc">Version control, modern deployment, and RAG systems</p>
+            </div>
+          </div>
+          <div class="skill-items-grid">
+            <div class="skill-item">
+              <img width="28" height="28" src="https://cdn.iconscout.com/icon/free/png-512/free-github-icon-svg-download-png-3073768.png?f=webp&w=512" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="https://cdn.iconscout.com/icon/free/png-512/free-vscode-icon-svg-download-png-10918898.png?f=webp&w=512" alt="VS Code" />
+              <span>VS Code</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="https://cdn.iconscout.com/icon/free/png-512/free-shape-icon-svg-download-png-3051365.png?f=webp&w=512" class="icons-colols" alt="Vercel" />
+              <span>Vercel</span>
+            </div>
+            <div class="skill-item">
+              <img width="28" height="28" src="./assets/rag.svg" alt="RAG" />
+              <span>RAG</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="connect-section" id="connect">
-    <h2 class="section-title">&lt; Connect /&gt;</h2>
-    <div class="connect-card">
-      <p class="connect-tagline">
-        I'm always open to new opportunities, collaborations, or just a good tech conversation.<br />
-        Feel free to reach out!
-      </p>
-      <a href="https://mail.google.com/mail/u/0/?tf=cm&to=sourabhpande43@gmail.com&fs=1" target="_blank"
-        class="connect-email-btn">
-        <i class="fas fa-envelope"></i>
-        sourabhpande43@gmail.com
-      </a>
-      <div class="connect-divider"></div>
-      <div class="social-links">
-        <a href="https://github.com/Sourabhpande532" target="_blank" rel="noreferrer" class="social-icon"
-          title="GitHub">
-          <i class="fab fa-github"></i>
+    <!-- Connect / Contact Section -->
+    <section class="connect-section" id="connect">
+      <div class="connect-card">
+        <span class="section-eyebrow">04 // Contact</span>
+        <h2 class="connect-heading">Let's Build Something Together</h2>
+        <p class="connect-tagline">
+          I'm currently seeking new full-stack opportunities. Whether you have an engineering role, a project collaboration, or just want to connect, my inbox is always open.
+        </p>
+        <a href="https://mail.google.com/mail/u/0/?tf=cm&to=sourabhpande43@gmail.com&fs=1" target="_blank"
+          class="connect-email-btn">
+          <i class="fas fa-envelope"></i>
+          sourabhpande43@gmail.com
         </a>
-        <a href="https://www.linkedin.com/in/sourabh-pande-412170224" target="_blank" rel="noreferrer"
-          class="social-icon" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://hashnode.com/@saurabhpande" target="_blank" rel="noreferrer" class="social-icon"
-          title="Hashnode">
-          <i class="fa-brands fa-hashnode"></i>
-        </a>
-        <a href="https://leetcode.com/u/sourabhpande532/" target="_blank" rel="noreferrer" class="social-icon"
-          title="LeetCode">
-          <i class="fa-solid fa-code"></i>
-        </a>
+        <div class="connect-divider"></div>
+        <div class="social-links">
+          <a href="https://github.com/Sourabhpande532" target="_blank" rel="noreferrer" class="social-icon"
+            title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sourabh-pande-412170224" target="_blank" rel="noreferrer"
+            class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://hashnode.com/@saurabhpande" target="_blank" rel="noreferrer" class="social-icon"
+            title="Hashnode">
+            <i class="fa-brands fa-hashnode"></i>
+          </a>
+          <a href="https://leetcode.com/u/sourabhpande532/" target="_blank" rel="noreferrer" class="social-icon"
+            title="LeetCode">
+            <i class="fa-solid fa-code"></i>
+          </a>
+        </div>
       </div>
-    </div>
-    <p class="footer-copy">&copy; 2026 Sourabh Pande &mdash; Built with HTML &amp; CSS</p>
+      <p class="footer-copy">&copy; 2026 Sourabh Pande &mdash; Built with Clean HTML &amp; CSS</p>
+    </section>
   </div>
 
   <!-- Back to Top Button -->

@@ -1,98 +1,143 @@
-/* =========================
-   Skills Section
-========================= */
+/* ==========================================================================
+   Skills Section - Categorized Engineering Competencies
+   ========================================================================== */
 
-.skills-container {
-  margin: 2.5rem auto 4rem;
+.skills-section {
+  padding: 3.5rem 0;
 }
 
-.skills {
+.skills-categories-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.skillBullet {
-  background: #121824;
-  border: 1px solid #1e293b;
-  color: #9ca3af;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 12px;
-  margin: 0;
+/* ==========================================================================
+   Category Card
+   ========================================================================== */
+
+.skill-category-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  padding: 1.5rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  text-align: center;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-.skillBullet img {
-  filter: grayscale(100%) contrast(115%);
-  transition: all 0.3s ease;
+.skill-category-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-medium);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.4);
+}
+
+.skill-category-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.skill-category-icon {
+  font-size: 1.25rem;
+  color: var(--accent-primary);
+  background: var(--accent-subtle);
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent-border);
+  flex-shrink: 0;
+}
+
+.skill-category-title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.skill-category-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   Skill Items Grid
+   ========================================================================== */
+
+.skill-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.skill-item {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 0.75rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.skill-item img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+  background: var(--bg-surface-active);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.skill-item:hover img {
+  transform: scale(1.1);
 }
 
 .icons-colols {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
-  padding: 3px;
+  padding: 2px;
 }
 
-.skillBullet:hover {
-  background-color: #1e293b;
-  border-color: var(--primaryEmerald);
-  color: #fff;
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(52, 211, 153, 0.15);
-}
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
 
-.skillBullet:hover img {
-  filter: grayscale(0%) contrast(100%);
-  transform: scale(1.1);
-}
-
-/* =========================
-   Skill Category Glow Classes
-========================= */
-
-/* Frontend skills — Purple glow */
-.skill-frontend:hover {
-  border-color: #c522c0 !important;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(197, 34, 192, 0.2) !important;
-}
-
-/* Backend skills — Emerald glow */
-.skill-backend:hover {
-  border-color: var(--primaryEmerald) !important;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(52, 211, 153, 0.2) !important;
-}
-
-/* Tools — Gold glow */
-.skill-tools:hover {
-  border-color: #e5d68a !important;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(229, 214, 138, 0.2) !important;
-}
-
-@media screen and (max-width: 900px) {
-  .skills {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
+@media screen and (max-width: 980px) {
+  .skills-categories-grid {
+    grid-template-columns: 1fr;
+    max-width: 34rem;
+    margin: 0 auto;
+    gap: 1.5rem;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .skills {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+@media screen and (max-width: 520px) {
+  .skill-items-grid {
+    grid-template-columns: 1fr;
   }
-  .skillBullet {
-    padding: 1.2rem;
-    font-size: 0.9rem;
-    gap: 0.5rem;
+
+  .skill-category-card {
+    padding: 1.4rem 1.2rem;
   }
 }

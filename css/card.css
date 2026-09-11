@@ -1,359 +1,248 @@
-/* =========================
-   Projects Section
-========================= */
+/* ==========================================================================
+   Projects Section - Engineering Case Study Cards
+   ========================================================================== */
 
 .projects-section {
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
-
-/* =========================
-   Grid
-========================= */
 
 .projects-grid {
-  max-width: 100%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.8rem;
+  gap: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-/* =========================
-   Card
-========================= */
+/* ==========================================================================
+   Project Card
+   ========================================================================== */
 
 .project-card {
-  background: #0f1623;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(124, 62, 102, 0.5);
-  box-shadow:
-    0 24px 48px rgba(0, 0, 0, 0.45),
-    0 0 0 1px rgba(124, 62, 102, 0.2),
-    0 0 30px rgba(124, 62, 102, 0.12);
+  transform: translateY(-4px);
+  border-color: var(--border-medium);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
 }
 
-/* =========================
-   Project Number Badge
-========================= */
+/* ==========================================================================
+   Project Header / Metadata Bar
+   ========================================================================== */
 
-.project-card .project-number {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  width: 28px;
-  height: 28px;
-  background: rgba(124, 62, 102, 0.85);
-  backdrop-filter: blur(4px);
-  border-radius: 50%;
+.project-card-header {
+  padding: 0.85rem 1.25rem;
+  background: var(--bg-surface-elevated);
+  border-bottom: 1px solid var(--border-subtle);
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #fff;
-  z-index: 10;
-  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* =========================
-   Browser Chrome Mockup Bar
-========================= */
+.project-category {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--accent-text);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.project-index {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Project Image Preview
+   ========================================================================== */
 
 .project-image-wrapper {
   position: relative;
   width: 100%;
-  flex-shrink: 0;
-}
-
-.browser-bar {
-  background: #1a2235;
-  padding: 0.55rem 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.browser-dots {
-  display: flex;
-  gap: 0.35rem;
-  flex-shrink: 0;
-}
-
-.browser-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.browser-dot:nth-child(1) { background: #ff5f57; }
-.browser-dot:nth-child(2) { background: #ffbd2e; }
-.browser-dot:nth-child(3) { background: #28c840; }
-
-.browser-url {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  padding: 0.2rem 0.75rem;
-  font-size: 0.68rem;
-  color: #6b7280;
-  white-space: nowrap;
+  height: 220px;
+  background: #06070a;
   overflow: hidden;
-  text-overflow: ellipsis;
-  font-family: monospace;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-/* =========================
-   Project Image
-========================= */
-
-.project-image {
-  width: 100%;
-  height: 210px;
-  background: #0b0f19;
-  overflow: hidden;
-  position: relative;
-}
-
-.project-image img {
+.project-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top center;
   display: block;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Gradient overlay at bottom of image for depth */
-.project-image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 50%,
-    rgba(15, 22, 35, 0.7) 100%
-  );
-  pointer-events: none;
+.project-card:hover .project-image-wrapper img {
+  transform: scale(1.03);
 }
 
-/* Hover: slow pan-down to show more of the screenshot */
-.project-card:hover .project-image img {
-  transform: scale(1.04) translateY(-3%);
-}
-
-/* =========================
-   Body
-========================= */
+/* ==========================================================================
+   Project Body
+   ========================================================================== */
 
 .project-body {
-  padding: 1.4rem 1.5rem 1.5rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-.project-body h3 {
-  font-size: 1.2rem;
+.project-title {
+  font-size: 1.22rem;
   font-weight: 700;
-  color: #f1f5f9;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.3px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+  letter-spacing: -0.3px;
+  line-height: 1.3;
 }
 
-.project-body h3::after {
-  content: '';
-  display: inline-block;
-  flex: 1;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.07);
-  margin-left: 0.5rem;
-}
-
-.project-body p {
-  color: #94a3b8;
-  font-size: 0.9rem;
-  line-height: 1.65;
-  margin-bottom: 1.1rem;
+.project-desc {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
   flex-grow: 1;
 }
 
-/* =========================
-   Tech Stack
-========================= */
+/* ==========================================================================
+   Tech Stack Badges
+   ========================================================================== */
 
 .project-tech {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.35rem;
 }
 
 .project-tech span {
-  background: rgba(255, 255, 255, 0.04);
-  color: #cbd5e1;
-  padding: 0.28rem 0.7rem;
-  border-radius: 20px;
-  font-size: 0.72rem;
-  font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  letter-spacing: 0.3px;
+  background: var(--bg-surface-elevated);
+  color: var(--text-secondary);
+  padding: 0.28rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.74rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  border: 1px solid var(--border-subtle);
+  letter-spacing: 0.2px;
+  transition: all 0.2s ease;
 }
 
-/* =========================
-   Buttons
-========================= */
+.project-card:hover .project-tech span {
+  border-color: var(--border-medium);
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Action Links
+   ========================================================================== */
 
 .project-links {
   display: flex;
-  gap: 0.7rem;
+  gap: 0.75rem;
+  margin-top: auto;
 }
 
 .project-btn {
   flex: 1;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.5rem;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.04);
-  color: #e2e8f0;
-  padding: 0.6rem;
+  padding: 0.65rem 1rem;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  font-size: 0.83rem;
+  font-size: 0.86rem;
   font-weight: 600;
-  transition: all 0.22s ease;
-  letter-spacing: 0.2px;
+  font-family: var(--font-sans);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
-.project-btn:first-child {
-  background: rgba(124, 62, 102, 0.18);
-  border-color: rgba(124, 62, 102, 0.4);
-  color: #e2a8ce;
+.project-btn.primary {
+  background: var(--accent-primary);
+  color: #090b0e;
+  border: 1px solid var(--accent-primary);
 }
 
-.project-btn:first-child:hover {
-  background: var(--primaryPurple, #7c3e66);
-  color: #fff;
-  border-color: var(--primaryPurple, #7c3e66);
-  box-shadow: 0 4px 14px rgba(124, 62, 102, 0.4);
+.project-btn.primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.22);
+}
+
+.project-btn.secondary {
+  background: var(--bg-surface-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-medium);
+}
+
+.project-btn.secondary:hover {
+  background: var(--bg-surface-active);
+  border-color: var(--border-strong);
   transform: translateY(-1px);
 }
 
-.project-btn:last-child:hover {
-  background: rgba(229, 214, 138, 0.12);
-  color: #e5d68a;
-  border-color: rgba(229, 214, 138, 0.35);
-  box-shadow: 0 4px 12px rgba(229, 214, 138, 0.15);
-  transform: translateY(-1px);
-}
-
-/* =========================
-   Tech Tag Color Coding
-========================= */
-
-/* Blue — React, JavaScript, TypeScript */
-.tag-blue {
-  background: rgba(56, 189, 248, 0.08) !important;
-  border-color: rgba(56, 189, 248, 0.25) !important;
-  color: #7dd3fc !important;
-}
-
-/* Green — Node, Express, MongoDB */
-.tag-green {
-  background: rgba(52, 211, 153, 0.08) !important;
-  border-color: rgba(52, 211, 153, 0.25) !important;
-  color: #6ee7b7 !important;
-}
-
-/* Orange — Auth, Cloud, APIs */
-.tag-orange {
-  background: rgba(251, 146, 60, 0.08) !important;
-  border-color: rgba(251, 146, 60, 0.25) !important;
-  color: #fdba74 !important;
-}
-
-/* Purple — AI, TypeScript extras */
-.tag-purple {
-  background: rgba(167, 139, 250, 0.08) !important;
-  border-color: rgba(167, 139, 250, 0.25) !important;
-  color: #c4b5fd !important;
-}
-
-/* =========================
+/* ==========================================================================
    Responsive Breakpoints
-========================= */
+   ========================================================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .projects-grid {
     grid-template-columns: 1fr;
-    max-width: 580px;
+    max-width: 36rem;
     margin: 0 auto;
-    gap: 1.5rem;
+    gap: 1.75rem;
   }
 
-  .project-image {
-    height: 200px;
+  .project-image-wrapper {
+    height: 210px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 580px) {
   .projects-section {
-    padding: 2.5rem 0;
+    padding: 2rem 0;
   }
 
-  .project-card {
-    border-radius: 12px;
-  }
-
-  .project-image {
-    height: 180px;
+  .project-image-wrapper {
+    height: 185px;
   }
 
   .project-body {
-    padding: 1.1rem 1.2rem 1.2rem;
+    padding: 1.2rem;
   }
 
-  .project-body h3 {
+  .project-title {
     font-size: 1.1rem;
   }
 
-  .project-body p {
-    font-size: 0.85rem;
-    margin-bottom: 0.9rem;
+  .project-desc {
+    font-size: 0.88rem;
   }
 
-  .project-tech {
-    margin-bottom: 0.9rem;
+  .project-links {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .project-btn {
-    font-size: 0.78rem;
-    padding: 0.55rem;
-  }
-
-  .browser-bar {
-    padding: 0.45rem 0.75rem;
-  }
-
-  .browser-dot {
-    width: 8px;
-    height: 8px;
+    width: 100%;
   }
 }
