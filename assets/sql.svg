@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="28" height="28">
+  <path fill="#0284c7" d="M32 6C17.64 6 6 10.48 6 16v32c0 5.52 11.64 10 26 10s26-4.48 26-10V16c0-5.52-11.64-10-26-10z"/>
+  <ellipse cx="32" cy="16" rx="26" ry="10" fill="#38bdf8"/>
+  <path fill="#0369a1" d="M58 26c0 5.52-11.64 10-26 10S6 31.52 6 26v5c0 5.52 11.64 10 26 10s26-4.48 26-10v-5z"/>
+  <path fill="#075985" d="M58 37c0 5.52-11.64 10-26 10S6 42.52 6 37v5c0 5.52 11.64 10 26 10s26-4.48 26-10v-5z"/>
+  <text x="32" y="37" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="14" text-anchor="middle" letter-spacing="1.5">SQL</text>
+</svg>

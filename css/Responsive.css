@@ -1,9 +1,35 @@
 /**
- * Responsive.css
- * 
- * Note: Component-specific responsive layouts are managed directly inside their 
- * respective stylesheets (style.css, navbar.css, card.css, blog.css, skills.css)
- * to maintain clean, modular coding practices.
- * 
- * Global responsive utility classes can be added here if needed.
+ * Responsive.css - Global Accessibility & Responsive Polish
  */
+
+/* Accessibility focus styles for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+
+/* Custom selection highlight */
+::selection {
+  background: var(--accent-primary);
+  color: #090b0e;
+}
+
+/* Global image safety */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container safety against horizontal scroll on small devices */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
